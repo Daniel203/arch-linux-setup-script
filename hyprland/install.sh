@@ -9,8 +9,8 @@ packages=(
     hyprpicker
     rofi 
     rofi-calc
-    # xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
+    aur:bibata-cursor-theme-bin
 
     # ags stuff
     typescript
@@ -27,38 +27,16 @@ packages=(
 	libsoup3
     brightnessctl
     swww
-    matugen
+    glib2
+    glib2-devel
     ttf-ubuntu-mono-nerd
     nwg-look
+    aur:sass 
+    aur:bun-bin
+    aur:matugen
 )
 
-aur_packages=(
-    bibata-cursor-theme-bin
-
-    # ags stuff
-    sass 
-    bun-bin
-)
-
-# Install with pacman
-for pkg in "${packages[@]}"; do
-    if ! pacman -Qi "$pkg" &> /dev/null; then
-	echo "Installing $pkg..."
-	sudo pacman -S --noconfirm "$pkg"
-    else
-	echo "$pkg is already installed."
-    fi
-done
-
-# Install with paru
-for pkg in "${aur_packages[@]}"; do
-    if ! pacman -Qi "$pkg" &> /dev/null; then
-        echo "Installing $pkg from AUR..."
-        paru -S --noconfirm "$pkg"
-    else
-        echo "$pkg is already installed."
-    fi
-done
+./utils/install_helper.sh "${packages[@]}"
 
 # Install AGS manually because there's no AUR package with v1 working
 if ! command -v ags &> /dev/null; then
