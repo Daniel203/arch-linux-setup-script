@@ -7,6 +7,7 @@ packages=(
     hyprcursor
     hyprsunset
     hyprpicker
+    hyprshot
     rofi 
     rofi-calc
     xdg-desktop-portal-hyprland

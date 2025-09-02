@@ -26,14 +26,14 @@ else
     echo "$TARGET_DIR already exists and is not empty — skipping clone."
 fi
 
-# If possible, convert the clone to ssh
-if ssh -T git@github.com 2>&1 | grep -q "successfully authenticated"; then
-    echo "SSH is working. Converting remote to SSH..."
-    git -C "$REPO_DIR" remote set-url origin $REPO_SSH_URL
-    git -C "$REPO_DIR" remote -v
-else
-    echo "SSH key not working with GitHub. Keeping HTTPS remote."
-fi
+# # If possible, convert the clone to ssh
+# if ssh -T git@github.com 2>&1 | grep -q "successfully authenticated"; then
+#     echo "SSH is working. Converting remote to SSH..."
+#     git -C "$REPO_DIR" remote set-url origin $REPO_SSH_URL
+#     git -C "$REPO_DIR" remote -v
+# else
+#     echo "SSH key not working with GitHub. Keeping HTTPS remote."
+# fi
 
 # If stow is installed, stow the dotfiles
 if pacman -Qi stow &>/dev/null; then

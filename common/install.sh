@@ -13,14 +13,23 @@ packages=(
     sed
     btop
     wl-clipboard
+    yq
     jq
     obsidian
     bitwarden
-
     telegram-desktop
     kitty
     mpv
     yt-dlp
+    chromium
+    proton-vpn-gtk-app
+    thunderbird
+    protonmail-bridge
+    kdeconnect
+    feh
+    playerctl
+    tailscale
+    zathura
 
     aur:vesktop-bin  # Discord alternative
     aur:spotify

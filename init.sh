@@ -8,3 +8,6 @@
 
 # Hyprland
 ./hyprland/init.sh
+
+# Coding stuff
+./coding/init.sh
