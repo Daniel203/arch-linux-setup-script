@@ -20,7 +20,6 @@ packages=(
     telegram-desktop
     kitty
     mpv
-    yt-dlp
     chromium
     proton-vpn-gtk-app
     thunderbird
@@ -30,6 +29,10 @@ packages=(
     playerctl
     tailscale
     zathura
+    zathura-pdf-mupdf
+    virtualbox-host-modules-arch
+    virtualbox
+    virtualbox-guest-iso
 
     aur:vesktop-bin  # Discord alternative
     aur:spotify

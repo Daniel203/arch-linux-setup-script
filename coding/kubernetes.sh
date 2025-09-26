@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Install required packages
+packages=(
+    minikube
+    kubectl
+)
+
+./utils/install_helper.sh "${packages[@]}"
+
 # Add user to libvirt
 sudo usermod -aG libvirt $(whoami)
 
