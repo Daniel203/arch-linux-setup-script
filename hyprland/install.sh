@@ -11,7 +11,13 @@ packages=(
     rofi 
     rofi-calc
     xdg-desktop-portal-hyprland
+    polkit-gnome
     aur:bibata-cursor-theme-bin
+
+    # dank material shell
+    aur:dms-shell-git
+    gammastep
+    aur:matugen-bin
 
     # ags stuff
     typescript
