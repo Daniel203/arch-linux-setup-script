@@ -18,6 +18,11 @@ packages=(
     aur:dms-shell-git
     gammastep
     aur:matugen-bin
+    cava 
+    wl-clipboard 
+    cliphist 
+    brightnessctl
+    aur:dgop
 
     # ags stuff
     typescript
