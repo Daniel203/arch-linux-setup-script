@@ -33,6 +33,14 @@ packages=(
     virtualbox-host-modules-arch
     virtualbox
     virtualbox-guest-iso
+    # Latex in vim
+    tree-sitter-cli
+    texlive-binextra
+    texlive-basic 
+    texlive-latex
+    texlive-langenglish
+    texlive-latexextra
+    texlive-science
 
     aur:vesktop-bin  # Discord alternative
     aur:spotify

@@ -15,7 +15,7 @@ packages=(
     aur:bibata-cursor-theme-bin
 
     # dank material shell
-    aur:dms-shell-git
+    aur:dms-shell
     gammastep
     aur:matugen-bin
     cava 
@@ -23,6 +23,8 @@ packages=(
     cliphist 
     brightnessctl
     aur:dgop
+    aur:dsearch-bin
+    # should also do systemctl --user enable --now dsearch
 
     # ags stuff
     typescript
