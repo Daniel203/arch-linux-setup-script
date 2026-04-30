@@ -41,6 +41,8 @@ packages=(
     texlive-langenglish
     texlive-latexextra
     texlive-science
+    gvfs-dnssd # For dav support in nautilus
+    nextcloud-client
 
     aur:vesktop-bin  # Discord alternative
     aur:spotify

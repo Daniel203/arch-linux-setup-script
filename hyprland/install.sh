@@ -44,6 +44,7 @@ packages=(
     glib2
     glib2-devel
     ttf-ubuntu-mono-nerd
+    ttf-iosevka
     nwg-look
     aur:sass 
     aur:bun-bin
