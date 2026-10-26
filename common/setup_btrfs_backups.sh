@@ -2,6 +2,7 @@
 
 packages=(
     grub-btrfs
+    inotify-tools
     aur:timeshift-autosnap
 )
 

@@ -24,5 +24,5 @@ sudo swapon --priority "$SWAP_PRIORITY" "$SWAP_FILE"
 
 # Update /etc/fstab for persistence
 # Removes any existing swapfile entries first to prevent duplicates
-sudo sed -i "\| $SWAP_FILE |d" /etc/fstab
+sudo sed -i "\|^${SWAP_FILE} |d" /etc/fstab
 echo "$SWAP_FILE none swap defaults,pri=$SWAP_PRIORITY 0 0" | sudo tee -a /etc/fstab
